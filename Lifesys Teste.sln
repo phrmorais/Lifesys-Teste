@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.29721.120
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifesys.application", "Lifesys.application\Lifesys.application.csproj", "{C99B8C14-F783-4E3F-9967-EC7329505923}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifesys.Domain", "Lifesys.Domain\Lifesys.Domain.csproj", "{F8A25648-4AC0-4550-8A3C-3B003DDE6943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifesys.Shared", "Lifesys.Shared\Lifesys.Shared.csproj", "{8104B92B-9BA0-40F2-831C-B437C91B1AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifesys.Infrastructure", "Lifesys.Infrastructure\Lifesys.Infrastructure.csproj", "{FDB9C3C3-799B-4D42-9E96-1D12F049A66D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifesys.Teste", "Lifesys.Teste\Lifesys.Teste.csproj", "{5BC88773-CFAF-4098-9414-256478ADB7D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{C99B8C14-F783-4E3F-9967-EC7329505923}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C99B8C14-F783-4E3F-9967-EC7329505923}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C99B8C14-F783-4E3F-9967-EC7329505923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8A25648-4AC0-4550-8A3C-3B003DDE6943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8A25648-4AC0-4550-8A3C-3B003DDE6943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8A25648-4AC0-4550-8A3C-3B003DDE6943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8A25648-4AC0-4550-8A3C-3B003DDE6943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8104B92B-9BA0-40F2-831C-B437C91B1AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8104B92B-9BA0-40F2-831C-B437C91B1AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8104B92B-9BA0-40F2-831C-B437C91B1AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8104B92B-9BA0-40F2-831C-B437C91B1AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB9C3C3-799B-4D42-9E96-1D12F049A66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB9C3C3-799B-4D42-9E96-1D12F049A66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB9C3C3-799B-4D42-9E96-1D12F049A66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB9C3C3-799B-4D42-9E96-1D12F049A66D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC88773-CFAF-4098-9414-256478ADB7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC88773-CFAF-4098-9414-256478ADB7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC88773-CFAF-4098-9414-256478ADB7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC88773-CFAF-4098-9414-256478ADB7D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
