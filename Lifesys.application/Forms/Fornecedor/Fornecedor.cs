@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lifesys.application
+namespace Lifesys.application.Forms.Fornecedor
 {
-    public partial class Form1 : Form
+    public partial class Fornecedor : Form
     {
-        public Form1()
+        public Fornecedor()
         {
             InitializeComponent();
         }

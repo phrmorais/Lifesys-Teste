@@ -126,6 +126,10 @@
     <Compile Include="Migrations\202002050240231_CargaInicial.designer.cs">
       <DependentUpon>202002050240231_CargaInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002052311203_FkEmpresa.cs" />
+    <Compile Include="Migrations\202002052311203_FkEmpresa.designer.cs">
+      <DependentUpon>202002052311203_FkEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -146,6 +150,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202002050240231_CargaInicial.resx">
       <DependentUpon>202002050240231_CargaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002052311203_FkEmpresa.resx">
+      <DependentUpon>202002052311203_FkEmpresa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

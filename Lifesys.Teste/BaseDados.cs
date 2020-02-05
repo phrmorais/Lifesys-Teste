@@ -6,13 +6,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Lifesys.Teste
 {
     [TestClass]
-    public class UnitTest1
+    public class BaseDados
     {
+        private LifesysContext _context;
         [TestMethod]
-        public void ConectaBanco()
+        public void VerificaEmpresa()
         {
-          var  we = new LifesysContext();
-            var list = we.Fornecedores.ToList();
+            var _context = new LifesysContext();
+            Assert.IsFalse(_context.Fornecedores.Any());
         }
     }
 }

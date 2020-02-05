@@ -6,7 +6,7 @@ namespace Lifesys.Domain.Entity
     public class Fornecedor : Shared.Entity.Entity
     {
         public string Nome { get; private set; }
-        //[ComplexType]
+        public virtual Empresa Empresa { get; private set; }
         public virtual Documento Documento { get; set; }
 
         public Fornecedor(long id, string nome, Documento documento) : base(id)

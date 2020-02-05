@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifesys.Infrastructure", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifesys.Teste", "Lifesys.Teste\Lifesys.Teste.csproj", "{5BC88773-CFAF-4098-9414-256478ADB7D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifesys.Services", "Lifesys.Services\Lifesys.Services.csproj", "{41D6698B-4366-4C86-BBC1-B1F7F9CBFA47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5BC88773-CFAF-4098-9414-256478ADB7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BC88773-CFAF-4098-9414-256478ADB7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BC88773-CFAF-4098-9414-256478ADB7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41D6698B-4366-4C86-BBC1-B1F7F9CBFA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D6698B-4366-4C86-BBC1-B1F7F9CBFA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D6698B-4366-4C86-BBC1-B1F7F9CBFA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D6698B-4366-4C86-BBC1-B1F7F9CBFA47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

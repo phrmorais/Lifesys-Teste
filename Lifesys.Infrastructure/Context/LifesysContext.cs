@@ -9,7 +9,7 @@ namespace Lifesys.Infrastructure.Context
     {
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<Fornecedor> Fornecedores { get; set; }
-        public LifesysContext() : base("LifesysDB")
+        public LifesysContext() : base("name=LifesysConnectionString")
         {
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
