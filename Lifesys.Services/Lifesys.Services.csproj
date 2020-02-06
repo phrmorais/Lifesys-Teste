@@ -46,6 +46,7 @@
     <Compile Include="Extensions\OnlyNumbers.cs" />
     <Compile Include="Extensions\OpenForm.cs" />
     <Compile Include="Extensions\SubstringRight.cs" />
+    <Compile Include="Extensions\ValidateDate.cs" />
     <Compile Include="Extensions\ValidateForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

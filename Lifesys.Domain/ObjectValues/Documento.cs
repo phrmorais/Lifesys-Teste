@@ -11,22 +11,28 @@ namespace Lifesys.Domain.ObjectValues
 {
     public class Documento
     {
-        public string NumDoc { get; set; }
+        public string Numero { get; set; }
         public TipoInscricao TipoInscricao { get; protected set; }
+
+        public Documento(string numero)
+        {
+            Numero = numero;
+        }
+
         public void Validar()
         {
-            if (string.IsNullOrEmpty(NumDoc))
+            if (string.IsNullOrEmpty(Numero))
                 throw new Exception("O CNPJ é inválido!\n Altere e salve novamente");
 
             TipoInscricao = Tipo;
-            if (TipoInscricao == TipoInscricao.CNPJ)
+            if (TipoInscricao == TipoInscricao.Júridica)
             {
-                if (!CNPJ.IsValid(NumDoc))
+                if (!CNPJ.IsValid(Numero))
                     throw new Exception("O CNPJ é inválido!\n Altere e salve novamente");
             }
             else
             {
-                if (!CPF.IsValid(NumDoc))
+                if (!CPF.IsValid(Numero))
                     throw new Exception("O CPF é inválido!\n Altere e salve novamente");
 
             }
@@ -36,12 +42,12 @@ namespace Lifesys.Domain.ObjectValues
         {
             get
             {
-                switch (NumDoc.Number().Length)
+                switch (Numero.Number().Length)
                 {
                     case 14:
-                        return TipoInscricao.CNPJ;
+                        return TipoInscricao.Júridica;
                     case 11:
-                        return TipoInscricao.CPF;
+                        return TipoInscricao.Física;
                     default:
                         return TipoInscricao.Outro;
                 }

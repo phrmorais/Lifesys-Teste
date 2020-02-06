@@ -20,7 +20,7 @@ namespace Lifesys.Infrastructure.Context
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.ComplexType<Documento>();
-            modelBuilder.ComplexType<Documento>().Property(a => a.NumDoc);
+            modelBuilder.ComplexType<Documento>().Property(a => a.Numero);
             modelBuilder.ComplexType<Documento>().Property(a => a.TipoInscricao);
 
             //This line lets everything work but doesn't include my 

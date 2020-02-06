@@ -26,20 +26,20 @@ namespace Lifesys.application
         }
         private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (_context.Empresas.Any())
-            {
-                _frmmenu = Application
-                    .OpenForms
-                    .Validar<Fornecedor>() ?? new Fornecedor();
-                _frmmenu.Open();
-            }
-            else
-            {
-                MessageBox.Show("Para cadastro de fornecedores, você deve primeiro cadastrar uma empresa.",
-                    "Cadastre uma Empresa",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            }
+            //if (_context.Empresas.Any())
+            //{
+            _frmmenu = Application
+                .OpenForms
+                .Validar<Fornecedor>() ?? new Fornecedor();
+            _frmmenu.Open();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Para cadastro de fornecedores, você deve primeiro cadastrar uma empresa.",
+            //        "Cadastre uma Empresa",
+            //        MessageBoxButtons.OK,
+            //        MessageBoxIcon.Information);
+            //}
         }
 
     }

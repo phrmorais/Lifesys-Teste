@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDados.cs" />
+    <Compile Include="Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +73,10 @@
     <ProjectReference Include="..\Lifesys.Infrastructure\Lifesys.Infrastructure.csproj">
       <Project>{FDB9C3C3-799B-4D42-9E96-1D12F049A66D}</Project>
       <Name>Lifesys.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lifesys.Services\Lifesys.Services.csproj">
+      <Project>{41D6698B-4366-4C86-BBC1-B1F7F9CBFA47}</Project>
+      <Name>Lifesys.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

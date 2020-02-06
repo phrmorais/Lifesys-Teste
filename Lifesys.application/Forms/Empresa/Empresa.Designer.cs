@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.EditUf = new System.Windows.Forms.ComboBox();
             this.EditRazaoSocial = new System.Windows.Forms.TextBox();
             this.EditCnpj = new System.Windows.Forms.TextBox();
@@ -36,21 +35,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.BtnLimpar = new System.Windows.Forms.Button();
             this.BtnIncluir = new System.Windows.Forms.Button();
             this.BtnAlterar = new System.Windows.Forms.Button();
             this.LbPesquisa = new System.Windows.Forms.Label();
             this.EditPesquisa = new System.Windows.Forms.TextBox();
-            this.BtnExcluir = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.empresaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.BtnLimpar = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empresaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // EditUf
@@ -121,6 +118,27 @@
             this.panel2.Size = new System.Drawing.Size(550, 53);
             this.panel2.TabIndex = 37;
             // 
+            // BtnExcluir
+            // 
+            this.BtnExcluir.Location = new System.Drawing.Point(225, 12);
+            this.BtnExcluir.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(100, 28);
+            this.BtnExcluir.TabIndex = 2;
+            this.BtnExcluir.Text = "&Excluir";
+            this.BtnExcluir.UseVisualStyleBackColor = true;
+            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
+            // 
+            // BtnLimpar
+            // 
+            this.BtnLimpar.Location = new System.Drawing.Point(225, 12);
+            this.BtnLimpar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(100, 28);
+            this.BtnLimpar.TabIndex = 9;
+            this.BtnLimpar.Text = "&Limpar";
+            this.BtnLimpar.UseVisualStyleBackColor = true;
+            // 
             // BtnIncluir
             // 
             this.BtnIncluir.Location = new System.Drawing.Point(123, 11);
@@ -160,17 +178,6 @@
             this.EditPesquisa.Name = "EditPesquisa";
             this.EditPesquisa.Size = new System.Drawing.Size(204, 22);
             this.EditPesquisa.TabIndex = 5;
-            // 
-            // BtnExcluir
-            // 
-            this.BtnExcluir.Location = new System.Drawing.Point(225, 12);
-            this.BtnExcluir.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnExcluir.Name = "BtnExcluir";
-            this.BtnExcluir.Size = new System.Drawing.Size(100, 28);
-            this.BtnExcluir.TabIndex = 2;
-            this.BtnExcluir.Text = "&Excluir";
-            this.BtnExcluir.UseVisualStyleBackColor = true;
-            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
             // 
             // BtnCancelar
             // 
@@ -220,20 +227,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(552, 318);
             this.dataGridView1.TabIndex = 0;
             // 
-            // empresaBindingSource
-            // 
-            this.empresaBindingSource.DataSource = typeof(Lifesys.Domain.Entity.Empresa);
-            // 
-            // BtnLimpar
-            // 
-            this.BtnLimpar.Location = new System.Drawing.Point(225, 12);
-            this.BtnLimpar.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnLimpar.Name = "BtnLimpar";
-            this.BtnLimpar.Size = new System.Drawing.Size(100, 28);
-            this.BtnLimpar.TabIndex = 9;
-            this.BtnLimpar.Text = "&Limpar";
-            this.BtnLimpar.UseVisualStyleBackColor = true;
-            // 
             // Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -255,7 +248,6 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empresaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,7 +261,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.BindingSource empresaBindingSource;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button BtnIncluir;
         private System.Windows.Forms.Button BtnAlterar;

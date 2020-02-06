@@ -76,6 +76,12 @@
     <Compile Include="Forms\Fornecedor\Fornecedor.Designer.cs">
       <DependentUpon>Fornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Fornecedor\ValidaIdade\ValidaIdade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Fornecedor\ValidaIdade\ValidaIdade.Designer.cs">
+      <DependentUpon>ValidaIdade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Empresa\Empresa.resx">
       <DependentUpon>Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Fornecedor\Fornecedor.resx">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Fornecedor\ValidaIdade\ValidaIdade.resx">
+      <DependentUpon>ValidaIdade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

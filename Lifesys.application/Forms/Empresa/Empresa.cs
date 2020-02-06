@@ -31,14 +31,12 @@ namespace Lifesys.application.Forms.Empresa
 
         private void BtnIncluir_Click(object sender, EventArgs e)
         {
-            Edit = true;
-            AlternaBotoes();
+            AlternaBotoes(true);
         }
 
         private void BtnAlterar_Click(object sender, EventArgs e)
         {
-            Edit = true;
-            AlternaBotoes();
+            AlternaBotoes(true);
         }
         private void BtnExcluir_Click(object sender, EventArgs e)
         {
@@ -46,19 +44,17 @@ namespace Lifesys.application.Forms.Empresa
         }
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            Edit = false;
-            AlternaBotoes();
+            AlternaBotoes(false);
         }
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            Edit = false;
-            AlternaBotoes();
+            AlternaBotoes(false);
         }
         private void BtnLimpar_Click(object sender, EventArgs e)
         {
             LimparCampos();
         }
-        public void AlternaBotoes()
+        public void AlternaBotoes(bool Edit)
         {
             BtnAlterar.Visible = !Edit;
             BtnIncluir.Visible = !Edit;
