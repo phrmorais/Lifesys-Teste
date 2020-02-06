@@ -1,19 +1,16 @@
 ﻿using Lifesys.Domain.Listed;
 using Lifesys.Services.Extensions;
+using Lifesys.Shared.Interface;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lifesys.application.Forms.Empresa
 {
-    public partial class Empresa : Form
+    public partial class Empresa : Form, IBase
     {
+        protected bool Edit;
         public Empresa()
         {
             InitializeComponent();
@@ -32,12 +29,53 @@ namespace Lifesys.application.Forms.Empresa
             EditCnpj.MaskCnpjCpf();
         }
 
-        private void Empresa_KeyDown(object sender, KeyEventArgs e)
+        private void BtnIncluir_Click(object sender, EventArgs e)
+        {
+            Edit = true;
+            AlternaBotoes();
+        }
+
+        private void BtnAlterar_Click(object sender, EventArgs e)
+        {
+            Edit = true;
+            AlternaBotoes();
+        }
+        private void BtnExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void BtnSalvar_Click(object sender, EventArgs e)
+        {
+            Edit = false;
+            AlternaBotoes();
+        }
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Edit = false;
+            AlternaBotoes();
+        }
+        private void BtnLimpar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+        }
+        public void AlternaBotoes()
+        {
+            BtnAlterar.Visible = !Edit;
+            BtnIncluir.Visible = !Edit;
+            BtnExcluir.Visible = !Edit;
+        }
+        public void OnKeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 this.SelectNextControl(this.ActiveControl, !e.Shift, true, true, true);
             }
+        }
+        public void LimparCampos()
+        {
+            EditCnpj.Text = "";
+            EditRazaoSocial.Text = "";
+            EditUf.SelectedIndex = 0;
         }
 
     }

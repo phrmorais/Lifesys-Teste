@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Extensions\MaskText.cs" />
     <Compile Include="Extensions\OnlyNumbers.cs" />
     <Compile Include="Extensions\OpenForm.cs" />

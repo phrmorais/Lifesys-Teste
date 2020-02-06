@@ -8,14 +8,13 @@ using System.Windows.Forms;
 namespace Lifesys.Services.Extensions
 {
 
-    public static class ValidateForm
+    public static class ValidarForm
     {
-        public static Form Validate<T>(this FormCollection forms) where T : Form
+        public static Form Validar<T>(this FormCollection forms) where T : Form
         {
-          return forms
-                 .OfType<T>()
-                 .FirstOrDefault();
-            //return form;
+            return forms
+                   .OfType<T>()
+                   .FirstOrDefault();
         }
     }
 }

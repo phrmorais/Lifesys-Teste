@@ -21,7 +21,7 @@ namespace Lifesys.application
         {
             _frmmenu = Application
                 .OpenForms
-                .Validate<Empresa>() ?? new Empresa();
+                .Validar<Empresa>() ?? new Empresa();
             _frmmenu.Open();
         }
         private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace Lifesys.application
             {
                 _frmmenu = Application
                     .OpenForms
-                    .Validate<Fornecedor>() ?? new Fornecedor();
+                    .Validar<Fornecedor>() ?? new Fornecedor();
                 _frmmenu.Open();
             }
             else

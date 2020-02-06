@@ -12,8 +12,8 @@ namespace Lifesys.Teste
         [TestMethod]
         public void VerificaEmpresa()
         {
-            var _context = new LifesysContext();
-            Assert.IsFalse(_context.Fornecedores.Any());
+            _context = new LifesysContext();
+            Assert.IsFalse(_context.Empresas.Any());
         }
     }
 }

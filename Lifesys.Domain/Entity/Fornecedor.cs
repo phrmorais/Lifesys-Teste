@@ -5,14 +5,15 @@ namespace Lifesys.Domain.Entity
 {
     public class Fornecedor : Shared.Entity.Entity
     {
-        public string Nome { get; private set; }
-        public virtual Empresa Empresa { get; private set; }
+        public string Nome { get; set; }
+        public long EmpresaId { get; set; }
+        public virtual Empresa Empresa { get; set; }
         public virtual Documento Documento { get; set; }
 
-        public Fornecedor(long id, string nome, Documento documento) : base(id)
+        public override void Validar()
         {
-            Nome = nome;
-            Documento = documento;
+            
+         
         }
     }
 }

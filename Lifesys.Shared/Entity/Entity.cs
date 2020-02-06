@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lifesys.Shared.Entity
 {
-    public class Entity
+    public abstract class Entity
     {
-        protected Entity(long id)
-        {
-            Id = id;
-        }
-        public long Id { get; private set; }
+        public long Id { get; set; }
+
+        public abstract void Validar();
     }
 }
 

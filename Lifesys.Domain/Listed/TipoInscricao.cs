@@ -9,6 +9,7 @@ namespace Lifesys.Domain.Listed
     public enum TipoInscricao
     {
         CPF,
-        CNPJ
+        CNPJ,
+        Outro
     }
 }

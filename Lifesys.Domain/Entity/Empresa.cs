@@ -1,5 +1,6 @@
 ﻿using Lifesys.Domain.Listed;
 using Lifesys.Shared.Entity;
+using Sirb.Documents.BR.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +11,15 @@ namespace Lifesys.Domain.Entity
 {
     public class Empresa : Shared.Entity.Entity
     {
-        private IList<Fornecedor> _fornecedores;
-        public Uf Uf { get; private set; }
-        public string NomeFantasia { get; private set; }
-        public string Cnpj { get; private set; }
-        public virtual IReadOnlyCollection<Fornecedor> Fornecedores { get { return _fornecedores.ToArray(); } }
+        public Uf Uf { get; set; }
+        public string NomeFantasia { get; set; }
+        public string Cnpj { get; set; }
+        public virtual IList<Fornecedor> Fornecedores { get; set; }
 
-        public Empresa(long id, Uf uf, string nomeFantasia, string cnpj) : base(id)
+        public override void Validar()
         {
-            Uf = uf;
-            NomeFantasia = nomeFantasia;
-            Cnpj = cnpj;
-            _fornecedores = new List<Fornecedor>();
+            if (!CNPJ.IsValid(Cnpj))
+                throw new Exception("O CNPJ é inválido!\n Altere e salve novamente");
         }
     }
 }

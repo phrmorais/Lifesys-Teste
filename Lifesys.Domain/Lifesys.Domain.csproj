@@ -65,7 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Command\CreateEmpresaCommand.cs" />
     <Compile Include="Entity\Empresa.cs" />
     <Compile Include="Entity\Fornecedor.cs" />
     <Compile Include="Listed\TipoInscricao.cs" />
@@ -87,6 +86,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Lifesys.Services\Lifesys.Services.csproj">
+      <Project>{41D6698B-4366-4C86-BBC1-B1F7F9CBFA47}</Project>
+      <Name>Lifesys.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lifesys.Shared\Lifesys.Shared.csproj">
       <Project>{8104B92B-9BA0-40F2-831C-B437C91B1AF0}</Project>
       <Name>Lifesys.Shared</Name>

@@ -35,7 +35,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnIncluir = new System.Windows.Forms.Button();
+            this.BtnAlterar = new System.Windows.Forms.Button();
+            this.LbPesquisa = new System.Windows.Forms.Label();
+            this.EditPesquisa = new System.Windows.Forms.TextBox();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnSalvar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.empresaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BtnLimpar = new System.Windows.Forms.Button();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empresaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,15 +103,144 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "CNPJ:";
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.BtnExcluir);
+            this.panel2.Controls.Add(this.BtnLimpar);
+            this.panel2.Controls.Add(this.BtnIncluir);
+            this.panel2.Controls.Add(this.BtnAlterar);
+            this.panel2.Controls.Add(this.LbPesquisa);
+            this.panel2.Controls.Add(this.EditPesquisa);
+            this.panel2.Controls.Add(this.BtnCancelar);
+            this.panel2.Controls.Add(this.BtnSalvar);
+            this.panel2.Location = new System.Drawing.Point(13, 384);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(550, 53);
+            this.panel2.TabIndex = 37;
+            // 
+            // BtnIncluir
+            // 
+            this.BtnIncluir.Location = new System.Drawing.Point(123, 11);
+            this.BtnIncluir.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnIncluir.Name = "BtnIncluir";
+            this.BtnIncluir.Size = new System.Drawing.Size(100, 28);
+            this.BtnIncluir.TabIndex = 8;
+            this.BtnIncluir.Text = "I&ncluir";
+            this.BtnIncluir.UseVisualStyleBackColor = true;
+            this.BtnIncluir.Click += new System.EventHandler(this.BtnIncluir_Click);
+            // 
+            // BtnAlterar
+            // 
+            this.BtnAlterar.Location = new System.Drawing.Point(15, 11);
+            this.BtnAlterar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAlterar.Name = "BtnAlterar";
+            this.BtnAlterar.Size = new System.Drawing.Size(100, 28);
+            this.BtnAlterar.TabIndex = 7;
+            this.BtnAlterar.Text = "&Alterar";
+            this.BtnAlterar.UseVisualStyleBackColor = true;
+            this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
+            // 
+            // LbPesquisa
+            // 
+            this.LbPesquisa.AutoSize = true;
+            this.LbPesquisa.Location = new System.Drawing.Point(339, 4);
+            this.LbPesquisa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LbPesquisa.Name = "LbPesquisa";
+            this.LbPesquisa.Size = new System.Drawing.Size(134, 17);
+            this.LbPesquisa.TabIndex = 6;
+            this.LbPesquisa.Text = "Pesquisa por CNPJ:";
+            // 
+            // EditPesquisa
+            // 
+            this.EditPesquisa.Location = new System.Drawing.Point(339, 23);
+            this.EditPesquisa.Margin = new System.Windows.Forms.Padding(4);
+            this.EditPesquisa.Name = "EditPesquisa";
+            this.EditPesquisa.Size = new System.Drawing.Size(204, 22);
+            this.EditPesquisa.TabIndex = 5;
+            // 
+            // BtnExcluir
+            // 
+            this.BtnExcluir.Location = new System.Drawing.Point(225, 12);
+            this.BtnExcluir.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(100, 28);
+            this.BtnExcluir.TabIndex = 2;
+            this.BtnExcluir.Text = "&Excluir";
+            this.BtnExcluir.UseVisualStyleBackColor = true;
+            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.Location = new System.Drawing.Point(123, 11);
+            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(100, 28);
+            this.BtnCancelar.TabIndex = 1;
+            this.BtnCancelar.Text = "Cancela&r";
+            this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnSalvar
+            // 
+            this.BtnSalvar.Location = new System.Drawing.Point(15, 11);
+            this.BtnSalvar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnSalvar.Name = "BtnSalvar";
+            this.BtnSalvar.Size = new System.Drawing.Size(100, 28);
+            this.BtnSalvar.TabIndex = 0;
+            this.BtnSalvar.Text = "&Salvar";
+            this.BtnSalvar.UseVisualStyleBackColor = true;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Location = new System.Drawing.Point(12, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(552, 318);
+            this.panel1.TabIndex = 38;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(552, 318);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // empresaBindingSource
             // 
             this.empresaBindingSource.DataSource = typeof(Lifesys.Domain.Entity.Empresa);
+            // 
+            // BtnLimpar
+            // 
+            this.BtnLimpar.Location = new System.Drawing.Point(225, 12);
+            this.BtnLimpar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(100, 28);
+            this.BtnLimpar.TabIndex = 9;
+            this.BtnLimpar.Text = "&Limpar";
+            this.BtnLimpar.UseVisualStyleBackColor = true;
             // 
             // Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 450);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -106,8 +249,12 @@
             this.Controls.Add(this.EditUf);
             this.KeyPreview = true;
             this.Name = "Empresa";
-            this.Text = "]";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Empresa_KeyDown);
+            this.Text = "Empresa";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnKeyDown);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empresaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,5 +270,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource empresaBindingSource;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button BtnIncluir;
+        private System.Windows.Forms.Button BtnAlterar;
+        private System.Windows.Forms.Label LbPesquisa;
+        private System.Windows.Forms.TextBox EditPesquisa;
+        private System.Windows.Forms.Button BtnExcluir;
+        private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.Button BtnSalvar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button BtnLimpar;
     }
 }
