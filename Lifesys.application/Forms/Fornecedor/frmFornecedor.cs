@@ -145,7 +145,7 @@ namespace Lifesys.application.Forms.Fornecedor
         }
         public void AtualizaFiltro()
         {
-            //GridFornecedor.AutoGenerateColumns = false;
+            GridFornecedor.AutoGenerateColumns = false;
             GridFornecedor.DataSource = new SortableBindingList<Domain.Entity.Fornecedor>(_context
                     .Fornecedores
 
