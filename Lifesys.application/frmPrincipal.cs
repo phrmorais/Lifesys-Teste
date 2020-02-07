@@ -8,11 +8,11 @@ using System.Windows.Forms;
 
 namespace Lifesys.application
 {
-    public partial class Principal : Form
+    public partial class frmPrincipal : Form
     {
         private Form _frmmenu;
         private readonly LifesysContext _context;
-        public Principal()
+        public frmPrincipal()
         {
             InitializeComponent();
             _context = new LifesysContext();
@@ -21,25 +21,25 @@ namespace Lifesys.application
         {
             _frmmenu = Application
                 .OpenForms
-                .Validar<Empresa>() ?? new Empresa();
+                .Validar<frmEmpresa>() ?? new frmEmpresa();
             _frmmenu.Open();
         }
         private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //if (_context.Empresas.Any())
-            //{
-            _frmmenu = Application
+            if (_context.Empresas.Any())
+            {
+                _frmmenu = Application
                 .OpenForms
-                .Validar<Fornecedor>() ?? new Fornecedor();
-            _frmmenu.Open();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Para cadastro de fornecedores, você deve primeiro cadastrar uma empresa.",
-            //        "Cadastre uma Empresa",
-            //        MessageBoxButtons.OK,
-            //        MessageBoxIcon.Information);
-            //}
+                .Validar<frmFornecedor>() ?? new frmFornecedor();
+                _frmmenu.Open();
+            }
+            else
+            {
+                MessageBox.Show("Para cadastro de fornecedores, você deve primeiro cadastrar uma empresa.",
+                    "Cadastre uma Empresa",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
 
     }

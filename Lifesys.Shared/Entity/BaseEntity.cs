@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lifesys.Shared.Entity
 {
-    public abstract class Entity
+    public abstract class BaseEntity
     {
         public long Id { get; set; }
 

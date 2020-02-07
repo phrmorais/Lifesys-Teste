@@ -1,6 +1,6 @@
 ﻿namespace Lifesys.application.Forms.Fornecedor.ValidaIdade
 {
-    partial class ValidaIdade
+    partial class frmValidaIdade
     {
         /// <summary>
         /// Required designer variable.

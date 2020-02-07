@@ -12,8 +12,11 @@ namespace Lifesys.Domain.ObjectValues
     public class Documento
     {
         public string Numero { get; set; }
-        public TipoInscricao TipoInscricao { get; protected set; }
+        public TipoInscricao TipoInscricao { get; set; }
+        public Documento()
+        {
 
+        }
         public Documento(string numero)
         {
             Numero = numero;
@@ -52,6 +55,10 @@ namespace Lifesys.Domain.ObjectValues
                         return TipoInscricao.Outro;
                 }
             }
+        }
+        public override string ToString()
+        {
+            return Numero;
         }
 
     }

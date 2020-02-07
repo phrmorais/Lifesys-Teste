@@ -26,12 +26,5 @@ namespace Lifesys.Services.Extensions
 
             return true;
         }
-
-
-
-
-
-
-
     }
 }

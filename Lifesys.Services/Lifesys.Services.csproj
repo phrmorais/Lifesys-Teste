@@ -45,6 +45,7 @@
     <Compile Include="Extensions\MaskText.cs" />
     <Compile Include="Extensions\OnlyNumbers.cs" />
     <Compile Include="Extensions\OpenForm.cs" />
+    <Compile Include="Extensions\OptionsGrid.cs" />
     <Compile Include="Extensions\SubstringRight.cs" />
     <Compile Include="Extensions\ValidateDate.cs" />
     <Compile Include="Extensions\ValidateForm.cs" />

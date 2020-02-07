@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Lifesys.application
 {
-    partial class Principal
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.

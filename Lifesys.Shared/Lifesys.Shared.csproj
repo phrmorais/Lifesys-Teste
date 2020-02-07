@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\BaseEntity.cs" />
     <Compile Include="Interface\IBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

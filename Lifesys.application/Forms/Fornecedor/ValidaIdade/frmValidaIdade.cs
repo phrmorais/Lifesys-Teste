@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Lifesys.application.Forms.Fornecedor.ValidaIdade
 {
-    public partial class ValidaIdade : Form
+    public partial class frmValidaIdade : Form
     {
         public bool IdadeValida { get; private set; } = false;
 
-        public ValidaIdade()
+        public frmValidaIdade()
         {
             InitializeComponent();
             EditData.Value = DateTime.Now;
